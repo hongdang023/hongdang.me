@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Products | Hong's Learning Hub</title>
+    <meta name="description"
+        content="Case studies và các dự án thiết kế trải nghiệm học tập thực tế mà Hồng đã triển khai.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Hồng.</a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="products.html" class="active">My Products</a></li>
+                    <li><a href="hongs-list.html">Hồng's List</a></li>
+                    <li><a href="community.html">My Community</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: var(--spacing-xxl);">
+            <h1 style="font-size: 3rem; margin-bottom: var(--spacing-sm);">My Products</h1>
+            <p class="hero-lead">Những hệ thống học tập mình đã xây dựng.</p>
+        </section>
+
+        <section class="container" style="padding-bottom: var(--spacing-xxl);">
+            <div class="filters">
+                <button class="filter-btn product-filter-btn active" data-filter="All">Tất cả</button>
+                <button class="filter-btn product-filter-btn" data-filter="Vận hành & Quản lý">Vận hành & Quản
+                    lý</button>
+                <button class="filter-btn product-filter-btn" data-filter="Thiết kế học tập">Thiết kế học tập</button>
+                <button class="filter-btn product-filter-btn" data-filter="Xây dựng cộng đồng">Xây dựng cộng
+                    đồng</button>
+                <button class="filter-btn product-filter-btn" data-filter="Truyền thông nội bộ">Truyền thông nội
+                    bộ</button>
+            </div>
+
+            <!-- Rendered Grid -->
+            <div class="masonry-grid" id="productGrid">
+                <!-- JS renders products here -->
+            </div>
+
+            <!-- CTA Strong -->
+            <div id="contact"
+                style="text-align: center; margin-top: var(--spacing-xxl); padding: var(--spacing-xl); background-color: var(--accent-burgundy); border-radius: 12px; color: #fff; box-shadow: 0 10px 30px rgba(107, 46, 46, 0.2);">
+                <h3 style="font-size: 2.2rem; color: #fff; margin-bottom: var(--spacing-md);">Nếu bạn đang thiết kế
+                    chương trình đào tạo...</h3>
+                <p
+                    style="max-width: 650px; margin: 0 auto var(--spacing-lg); color: rgba(255,255,255,0.9); font-size: 1.1rem; line-height: 1.8;">
+                    Bạn có thể tiếp tục tự làm. Hoặc trao đổi cùng Hồng để nhìn rõ hệ thống hơn, xây dựng trải nghiệm
+                    học tập không chỉ hiệu quả mà còn truyền cảm hứng.
+                </p>
+                <div style="display: flex; gap: var(--spacing-md); justify-content: center;">
+                    <a href="mailto:hello@example.com" class="btn btn-outline"
+                        style="border-color: #fff; color: #fff; background: transparent; transition: all 0.3s;">Book a
+                        conversation</a>
+                    <a href="https://substack.com" target="_blank" class="btn"
+                        style="color: var(--accent-burgundy); background: #fff;" rel="noopener">Đọc thêm trên
+                        Substack</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal Container -->
+    <div class="modal-overlay" id="productModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div id="modalBody" class="modal-body">
+                <!-- Content gets injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-left">
+                    <h3>Kết nối</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://substack.com" target="_blank" rel="noopener">Đọc Substack</a></li>
+                        <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+                        <li><a href="community.html">My Community</a></li>
+                    </ul>
+                </div>
+                <div class="footer-right">
+                    <h3>Hợp tác</h3>
+                    <ul class="footer-links">
+                        <li><a href="mailto:hello@example.com">Email Hồng</a></li>
+                        <li><a href="#contact" class="btn btn-primary"
+                                style="display:inline-block; margin-top:8px;">Book a conversation</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Đặng Tuyết Hồng. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

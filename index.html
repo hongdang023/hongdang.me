@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hong's Learning Hub | Learning Operating System</title>
+  <meta name="description" content="Thiết kế hệ thống học tập có cấu trúc, có mục tiêu và kết quả thật.">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body.home {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      justify-content: center;
+      background-color: var(--base-bg);
+      align-items: center;
+      padding: 0 16px;
+    }
+
+    .home-container {
+      width: 100%;
+      max-width: 900px;
+      text-align: center;
+    }
+
+    .home h1 {
+      font-size: 3rem;
+      margin-bottom: 64px;
+      color: var(--text-primary);
+      font-weight: 700;
+    }
+
+    .home-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .home-card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--gray-bg);
+      border-top: 4px solid var(--accent-terracotta);
+      border-radius: 8px;
+      padding: 32px 24px;
+      transition: all 0.3s ease;
+      cursor: pointer;
+      text-align: left;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.02);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      font-weight: 600;
+      color: var(--accent-burgundy);
+      font-size: 1.15rem;
+      line-height: 1.4;
+      font-family: var(--font-heading);
+    }
+
+    .home-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+      border-top-color: var(--accent-burgundy);
+    }
+
+    .home-card .number-badge {
+      background-color: #7d96a5;
+      color: white;
+      border-radius: 4px;
+      padding: 4px 8px;
+      font-size: 0.9rem;
+      margin-right: 12px;
+    }
+
+    @media (max-width: 768px) {
+      .home-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .home h1 {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+      }
+    }
+  </style>
+</head>
+
+<body class="home">
+  <div class="home-container">
+    <h1>Điều gì dẫn bạn đến với mình?</h1>
+
+    <div class="home-grid">
+      <a href="hongs-list.html" class="home-card">
+        <span class="number-badge">1</span> Tôi muốn tìm khóa học phù hợp
+      </a>
+
+      <a href="about.html" class="home-card">
+        <span class="number-badge">2</span> Tôi muốn hiểu Hồng là ai
+      </a>
+
+      <a href="about.html" class="home-card">
+        <span class="number-badge">3</span> Tôi muốn trao đổi / hợp tác
+      </a>
+    </div>
+  </div>
+</body>
+
+</html>
